@@ -1,0 +1,5 @@
+form {background-color:#2861db; width:260px; border-width:10px; border-color:black; border-style:solid; text-align:center;}
+input {width:200px; margin-bottom:5px; background-color:#31bbe3;}
+p {margin-bottom:5px; color:#ffffff;}
+select {width:200px; margin-bottom:5px; background-color:#31bbe3;}
+textarea {width:200px; rows:6; margin-bottom:5px; background-color:#31bbe3; padding-bottom:90px;}

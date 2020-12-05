@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Задание №16</title>
+	<style>
+	* {margin: 0;padding: 0;}
+	*:focus {outline: none;}
+	body {font: 16px sans-serif;}
+	#contact h2, #contact label {font-family: "Times New Roman";}
+	#contact ul {width:750px;list-style-type:none;list-style-position:outside;padding: 0;}
+	#contact li {padding:12px;border-bottom:1px solid #eee;position:relative;}
+	#contact li:first-child, #contact li:last-child {border-bottom:1px solid #777;}
+	#contact h2 {margin:0;display: inline;}
+	.required_notification {color:#d45252;margin:5px 0 0 0;display:inline;float:right;}
+	#contact label {width:150px;margin-top: 3px;display:inline-block;float:left;padding:3px;}
+	#contact input {height:20px;width:220px;padding:5px 8px;}
+	#contact textarea {padding:8px;width:300px;}
+	#contact button {margin-left:156px;}
+	#contact input, #contact textarea {border:1px solid #aaa;border-radius:2px;padding-right:30px;}
+	#contact input:focus, .#contact textarea:focus {background: #fff;border:1px solid #555;padding-right:70px;}
+	#contact input:required, #contact textarea:required {background: #fff url(red_asterisk.png) no-repeat 98% center;}
+	#contact input:required:valid, #contact textarea:required:valid {background: #fff url(valid.png) no-repeat 98% center;border-color: #28921f}
+	#contact input:focus:invalid, #contact textarea:focus:invalid {background: #fff url(invalid.png) no-repeat 98% center;border-color: #b0353}
+	button.submit {background-color: #68b12f;border: 1px solid #509111;border-bottom: 1px solid #5b992b;border-radius: 3px;color: white;font-weight: bold;padding: 6px 20px;text-align: center;}
+	button.submit:hover {opacity:.85;cursor: pointer;}
+	button.submit:active {border: 1px solid #20911e;}
+	</style>
+</head>
+<body>
+	<form id="contact">
+		<ul>
+			<li>
+			<h2>Свяжитесь с нами</h2>
+			</li>
+			<li>
+			<label for="name">Имя : </label>
+			<input id="name" type="text" placeholder="введите сюда свое имя" required />
+			</li>
+			<li>
+			<label for="email">Электронная почта : </label>
+			<input id="email" type="email" name="email" placeholder="введите сюда свою почту" required />
+			</li>
+			<li>
+			<label for="website">Веб-сайт : </label>
+			<input id="website" type="url" name="website" placeholder="введите сюда свой веб-сайт" required pattern="(http|https)://.+"/>
+			</li>
+			<li>
+			<label for="message">Сообщение : </label>
+			<textarea id="message" name="message" cols="40" rows="6"></textarea>
+			</li>
+			<li>
+			<button class="submit" type="submit">Отправить</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

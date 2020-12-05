@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Zadanie №6</title>
+	<style>
+		button {color: yellow; background-color: gray; font-style: oblique;}
+		#unred {font-size: 30px;}
+		input:checked + #boxch {background:red;}
+	</style>
+</head>
+<body>
+	<form>
+		<p><textarea name="comment"></textarea></p>
+		<button>Button</button>
+		<p><select>
+		<option>Random1</option>
+		<option>Random2</option>
+		<option>random3</option>
+		</select>
+		</p>
+		<input id="unred" type="text" placeholder="Unredactable" disabled/>
+		<p>
+		<input id="box" type="checkbox">
+		<label id="boxch" for="box">Это должно стать красным</label>
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Zadanie13</title>
+	<style>
+		ul {list-style: none;margin: 0;padding-left: 0;}
+		a{text-decoration: none;}
+		li{display: inline;}
+		div{position: fixed;top: 0;left: 0; right:0; width:100%;border: 2px solid lightgray; background:lightgray;}
+		div ul{list-style: none;float: right;display: inline-table;}
+		div ul li{float: left;}
+		div ul li:hover {background:#3b6fdd;}
+		div ul li:hover > ul {display: inline-block;}
+		div ul li a{display: block; padding: 20px 20px; color:black; font-size: 25px; text-decoration: none;}
+		div ul ul{position: absolute;display: none;top: 100%;border: 2px solid lightgray;}
+		div ul ul li{float: none;}
+		div ul ul li:hover > a {background:#7596db;}
+		div ul ul li a {padding: 20px 30px;border-bottom: 2px solid lightgray; background:lightgray;}
+		body{font-family:Times New Roman;}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><a href="">RANDOMN</a>
+				<ul>
+					<li><a href="">RANDOM1</a></li>
+					<li><a href="">RANDOM2</a></li>
+				</ul>
+			</li>
+			<li><a href="">RANDOM2</a></li>
+			<li><a href="">RANDOM3</a>
+				<ul>
+					<li><a href="">RANDOM3</a></li>
+					<li><a href="">RANDOM4</a></li>
+				</ul>
+			</li>
+			<li><a href="">RANDOM4</a></li>
+		</ul>
+	</div>
+</body>
+</html>

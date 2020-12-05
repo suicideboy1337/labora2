@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>Zadanie16</title>
+	<style>
+
+	</style>
+</head>
+<body>
+	<form id="form">
+		<h1>Свяжитесь с нами</h1>
+		<hr noshade>
+		<p><label>Имя : </label>
+		<input type="text" placeholder="введите сюда свое имя" required class="scale" minlength="3" maxlength="12">
+		<hr>
+		<p><label>Электронная почта : </label><input type="email" placeholder="введите сюад свою почту" required class="scale"></p>
+		<hr>
+		<p><label>Веб-сайт : </label>
+		<input type="url" placeholder="введите сюда свой сайт" required class="scale"></p>
+		<hr>
+		<div id="Masage">
+			<label>Сообщение : </label>
+		</div>
+		<div id="text">
+			<textarea name="textarea" cols="45" rows="6" class="scale"></textarea>
+		</div>
+		<hr>
+	</form>
+<button type="submit" class="dws">Отправить</button>
+</body>
+</html>
